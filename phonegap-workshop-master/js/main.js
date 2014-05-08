@@ -21,7 +21,7 @@ var app = {
 //            }
 //        });
         
-    },
+//    },
 
     showAlert: function (message, title) {
         if (navigator.notification) {
@@ -48,17 +48,28 @@ var app = {
     
     initialize: function() {
         var self = this;
-        
-        // Compile the two templates
-        this.homeTpl = Handlebars.compile($("#home-tpl").html());
-        this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
-        
-        this.store = new MemoryStore(function () {
-            self.renderHomeView();
-            self.showAlert('Store Initialized', 'info');
+        self.showAlert('Store Initialized', 'info');
+        this.store = new MemoryStore(function() {
+            $('body').html(new HomeView(self.store).render().el);
         });
-//        $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
+    
+//    initialize: function() {
+//        var self = this;
+//        
+//        Compile the two templates, privious
+//        this.homeTpl = Handlebars.compile($("#home-tpl").html());
+//        this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+        
+//        this.store = new MemoryStore(function () {
+//            Previous
+//            self.renderHomeView();
+//            self.showAlert('Store Initialized', 'info');
+            
+//            $('body').html(new HomeView(self.store).render().el);
+//        });
+//        $('.search-key').on('keyup', $.proxy(this.findByName, this));
+//    }
 };
 
 app.initialize();
