@@ -1,11 +1,12 @@
 var app = {
 
-    findByName: function() {
-
-        var self = this;
-        this.store.findByName($('.search-key').val(), function(employees) {
-            $('.employee-list').html(self.employeeLiTpl(employees));
-        });
+//    Moved to HomeVew class Completely
+//    findByName: function() {
+//
+//        var self = this;
+//        this.store.findByName($('.search-key').val(), function(employees) {
+//            $('.employee-list').html(self.employeeLiTpl(employees));
+//        });
 
         
 //        Inline html previous
@@ -30,7 +31,8 @@ var app = {
         }
     },
     
-    renderHomeView: function() {
+//    Moved to HomeVew class Completely
+//    renderHomeView: function() {
         
 //      Inline html
 //        var html =
@@ -40,9 +42,9 @@ var app = {
 //            "<ul class='employee-list'</ul>" +
 //            "</div>"
         
-        $('body').html(this.homeTpl());
-        $('.search-key').on('keyup', $.proxy(this.findByName, this));
-    },
+//        $('body').html(this.homeTpl());
+//        $('.search-key').on('keyup', $.proxy(this.findByName, this));
+//    },
     
     initialize: function() {
         var self = this;
