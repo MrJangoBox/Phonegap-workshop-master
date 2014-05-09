@@ -5,7 +5,7 @@
         versionCode = "10"
         version     = "1.1.0">
  
-    <name>Employee Directory</name>
+    <name>Emp Dir</name>
  
     <description>
         A simple employee directory application
@@ -15,7 +15,7 @@
         Credits to Christophe Coenraets
     </author>
     
-    <icon src="icon-57-2x.png" />
+    <icon src="img/icon-57-2x.png" />
     
     <preference name="Fullscreen" value="true" />
  
