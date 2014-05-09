@@ -132,7 +132,7 @@ var app = {
     
     initialize: function() {
         var self = this;
-        self.showAlert('Store Initialized', 'info');
+//        self.showAlert('Store Initialized', 'info');
         this.detailsURL = /^#employees\/(\d{1,})/;
         this.registerEvents();
         this.store = new MemoryStore(function() {
