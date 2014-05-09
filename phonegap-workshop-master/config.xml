@@ -16,6 +16,8 @@
     </author>
     
     <icon src="img/icon-57-2x.png" />
+    <gap:splash src="splash.png" />
+    <gap:splash src="img/Default@2x.png" gap:platform="ios" width="640" height="960" />
     
     <preference name="Fullscreen" value="true" />
  
@@ -26,5 +28,8 @@
     <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+    </feature>
  
 </widget>
