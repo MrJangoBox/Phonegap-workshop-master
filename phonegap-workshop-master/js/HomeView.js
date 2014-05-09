@@ -2,7 +2,7 @@ var HomeView = function(store) {
  
     this.initialize = function() {
         // Define a div wrapper for the view. The div wrapper is used to attach events.
-        this.el = $('<div/>');
+        this.el = $('<div id="homePage"></>');
         this.el.on('keyup', '.search-key', this.findByName);
     };
  
@@ -19,7 +19,7 @@ var HomeView = function(store) {
                 self.iscroll.refresh();
             } else {
                 console.log('New iScroll');
-                self.iscroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: false });
+                self.iscroll = new iScroll($('.scroll', self.el)[0], {hScrollbar: false, vScrollbar: false                      });
             }
         });
     };
