@@ -77,6 +77,7 @@ var app = {
         if (!hash) {
             if (this.homePage) {
                 this.slidePage(this.homePage);
+                StatusBar.backgroundColorByHexString('#CC99FF');
             } else {
                 this.homePage = new HomeView(this.store).render();
                 this.slidePage(this.homePage);
