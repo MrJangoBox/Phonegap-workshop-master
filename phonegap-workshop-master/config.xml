@@ -16,6 +16,7 @@
     </author>
     
     <icon src="img/icon-57-2x.png" />
+    <gap:plugin name="org.apache.cordova.statusbar"/>
     <gap:splash src="splash.png" />
     <gap:splash src="img/Default@2x.png" gap:platform="ios" width="640" height="960" />
     
