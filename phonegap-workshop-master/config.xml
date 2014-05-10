@@ -15,6 +15,9 @@
         Credits to Christophe Coenraets
     </author>
     
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    
     <icon src="img/icon-57-2x.png" />
     <gap:splash src="splash.png" />
     <gap:splash src="img/Default@2x.png" gap:platform="ios" width="640" height="960" />
