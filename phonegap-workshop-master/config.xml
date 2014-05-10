@@ -20,7 +20,7 @@
     <gap:splash src="splash.png" />
     <gap:splash src="img/Default@2x.png" gap:platform="ios" width="640" height="960" />
     
-    <preference name="fullscreen" value="true" />
+    <preference name="fullscreen" value="false" />
  
     <feature name="http://api.phonegap.com/1.0/camera"/>
     <feature name="http://api.phonegap.com/1.0/contacts"/>
